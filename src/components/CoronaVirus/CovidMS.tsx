@@ -7,7 +7,7 @@ export default class CovidMS {
         return url ;
     }
 
-    static apifyCovidURI : string = "/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true" ;
+    static apifyCovidURI : string = "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true" ;
     
 
 }

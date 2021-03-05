@@ -2,13 +2,13 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
 
-      app.use(
-        '/v2',
-        createProxyMiddleware({
-          target: 'https://api.apify.com',
-          changeOrigin: true,
-        })
-      );
+      // app.use(
+      //   '/v2',
+      //   createProxyMiddleware({
+      //     target: 'https://api.apify.com',
+      //     changeOrigin: true,
+      //   })
+      // );
   
       app.use(
         '/svc/search',
