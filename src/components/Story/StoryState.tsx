@@ -1,0 +1,31 @@
+export default interface StoryState{
+    arts : any[] ;
+    automobiles : any[] ;
+    books : any[] ;
+    business : any[] ;
+    fashion : any[] ;
+    food : any[] ;
+    health : any[] ;
+    home : any[] ;
+    insider : any[] ;
+    magazine : any[] ;
+    movies : any[] ;
+    nyregion : any[] ;
+    obituaries : any[] ;
+    opinion : any[] ;
+    politics : any[] ;
+    realestate : any[] ;
+    science : any[] ;
+    sports : any[] ;
+    sundayreview : any[] ;
+    technology : any[] ;
+    theater : any[] ;
+    t_magazine : any[] ;
+    travel : any[] ;
+    upshot : any[] ;
+    us : any[] ;
+    world : any[] ;
+    visible : boolean ;
+    currentTab : string ;
+    currentList : any[] ;
+}

@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.active{
+  font-weight: 500;
+  color: blue  !important;
+}
+
+.bgImage{
+  background-color: #dadaff ;
+}
+
+.headerFont{
+  font-family: "Times New Roman", Times, serif, Fantasy;
+}
+
+.width_10{
+  width: 10% ;;
+}
+
+.subHeaderFont{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.marginLeft_12{
+  margin-left: 12% ;
+}
+
+.card_image{
+  width: 200px  !important;
+  height: 200px !important ;
+}
