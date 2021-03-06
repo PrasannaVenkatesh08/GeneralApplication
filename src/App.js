@@ -8,7 +8,7 @@ import Parent from './components/Parent/Parent'
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App blueTri">
       <Parent />
     </div>
   );

@@ -37,10 +37,6 @@
   }
 }
 
-.active{
-  font-weight: 500;
-  color: blue  !important;
-}
 
 .bgImage{
   background-color: #dadaff ;
@@ -66,3 +62,32 @@
   width: 200px  !important;
   height: 200px !important ;
 }
+
+.blackHexa{
+  background-image: url("./assests/images/blackHexa.jpg");
+}
+
+.blueTri{
+  background-image: url("./assests/images/BlueTriangle.jpg");
+}
+
+.darkBlue{
+  background-image: url("./assests/images/DarkBlue.jpg");
+}
+
+
+.nav-item :hover{
+  color: rgb(101, 101, 226)  !important;
+}
+
+.selected{
+  color: rgb(30, 0, 163)  !important;
+}
+
+.cursorPointer{
+  cursor: pointer !important;
+}
+
+.titlePage { color: #b48608; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; }
+
+

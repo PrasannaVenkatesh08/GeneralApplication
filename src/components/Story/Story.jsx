@@ -9,6 +9,8 @@ import 'primeicons/primeicons.css';
 import axios from "axios";
 import API_URL from "../Common/API_URL";
 import CardStory from "./CardStory";
+import Loader from "react-loader-spinner";
+
 
 export default class Story extends React.Component {
 
@@ -41,7 +43,8 @@ export default class Story extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentList : [] ,
+            loader : false,
+            currentList: [],
             currentTab: "arts",
             arts: [],
             automobiles: [],
@@ -71,29 +74,30 @@ export default class Story extends React.Component {
             world: [],
             visible: false
         }
-        
+
     }
 
-    componentDidMount(){
-        this.fetchContent("arts") ;
+    componentDidMount() {
+        this.fetchContent("arts");
     }
 
     handleVisible() {
         this.setState({ visible: !this.state.visible });
     }
 
-    fetchContent(tabName ) {
-       var listOfData = [] ;
-       listOfData = this.state[tabName] ;
-       if( listOfData.length == 0 ){
-            axios.get(API_URL.story_Url+tabName+API_URL.apiKEy)
-                .then( res =>{
+    fetchContent(tabName) {
+        var listOfData = [];
+        this.setState({loader:true})
+        listOfData = this.state[tabName];
+        if (listOfData.length == 0) {
+            axios.get(API_URL.story_Url + tabName + API_URL.apiKEy)
+                .then(res => {
                     var data = res.data;
-                    this.setState({ [tabName] : data.results , currentList : data.results, currentTab : [tabName] });
+                    this.setState({ [tabName]: data.results, currentList: data.results, currentTab: [tabName] });
                 })
-       }else{
-           this.setState({currentTab : [tabName], currentList : this.state[tabName]}) ;
-       }
+        } else {
+            this.setState({ currentTab: [tabName], currentList: this.state[tabName] ,loader: false});
+        }
     }
 
     render() {
@@ -101,16 +105,18 @@ export default class Story extends React.Component {
         sideBarContent = this.tabList.map(data => {
             return <li><a className="text-capitalize float-left" onClick={() => this.fetchContent(data)}>{data}</a></li>;
         })
-        var storyList  = [] ;
-        var tabName = this.state.currentTab ;
-        storyList = this.state.currentList ;
-        var cards = [] ;
-        cards = storyList.map( data=>{
-            return <CardStory cardData={data} /> ;
+        var storyList = [];
+        var tabName = this.state.currentTab;
+        storyList = this.state.currentList;
+        var cards = [];
+        cards = storyList.map(data => {
+            return <CardStory cardData={data} />;
         })
         return (
             <React.Fragment>
+                
                 <Sidebar position="left" visible={this.state.visible} onHide={() => this.handleVisible()}>
+                    <h4>Select Topic</h4>
                     <ul>
                         {sideBarContent}
                     </ul>
@@ -120,7 +126,9 @@ export default class Story extends React.Component {
                 </div>
                 <div className="w-100">
                     <div className="w-100">
-                        Topic : {tabName}
+                        <div className="w-75 marginLeft_12">
+                            <h2 className="titlePage text-capitalize">Topic : {tabName}</h2>
+                        </div>
                     </div>
                     <div className="w-75 marginLeft_12 mt-4">
                         {cards}
