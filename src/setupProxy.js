@@ -1,6 +1,6 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
+//const { createProxyMiddleware } = require('http-proxy-middleware');
 
-module.exports = function(app) {
+//module.exports = function(app) {
 
       // app.use(
       //   '/v2',
@@ -10,20 +10,20 @@ module.exports = function(app) {
       //   })
       // );
   
-      app.use(
-        '/svc/search',
-        createProxyMiddleware({
-          target: 'https://api.nytimes.com',
-          changeOrigin: true,
-        })
-      );
+//       app.use(
+//         '/svc/search',
+//         createProxyMiddleware({
+//           target: 'https://api.nytimes.com',
+//           changeOrigin: true,
+//         })
+//       );
 
-      app.use(
-        '/svc/topstories',
-        createProxyMiddleware({
-          target: 'https://api.nytimes.com',
-          changeOrigin: true,
-        })
-      );
+//       app.use(
+//         '/svc/topstories',
+//         createProxyMiddleware({
+//           target: 'https://api.nytimes.com',
+//           changeOrigin: true,
+//         })
+//       );
 
-};
+// };
