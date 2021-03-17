@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/GeneralApplication/static/css/main.36c57e2e.chunk.css",
-    "main.js": "/GeneralApplication/static/js/main.334026eb.chunk.js",
-    "main.js.map": "/GeneralApplication/static/js/main.334026eb.chunk.js.map",
+    "main.js": "/GeneralApplication/static/js/main.801f6eff.chunk.js",
+    "main.js.map": "/GeneralApplication/static/js/main.801f6eff.chunk.js.map",
     "runtime-main.js": "/GeneralApplication/static/js/runtime-main.1cb155b3.js",
     "runtime-main.js.map": "/GeneralApplication/static/js/runtime-main.1cb155b3.js.map",
     "static/css/2.247aca17.chunk.css": "/GeneralApplication/static/css/2.247aca17.chunk.css",
-    "static/js/2.bde19dbd.chunk.js": "/GeneralApplication/static/js/2.bde19dbd.chunk.js",
-    "static/js/2.bde19dbd.chunk.js.map": "/GeneralApplication/static/js/2.bde19dbd.chunk.js.map",
+    "static/js/2.6c9dbd83.chunk.js": "/GeneralApplication/static/js/2.6c9dbd83.chunk.js",
+    "static/js/2.6c9dbd83.chunk.js.map": "/GeneralApplication/static/js/2.6c9dbd83.chunk.js.map",
     "static/js/3.2dd29a9a.chunk.js": "/GeneralApplication/static/js/3.2dd29a9a.chunk.js",
     "static/js/3.2dd29a9a.chunk.js.map": "/GeneralApplication/static/js/3.2dd29a9a.chunk.js.map",
     "static/js/4.b96502c4.chunk.js": "/GeneralApplication/static/js/4.b96502c4.chunk.js",
@@ -19,7 +19,7 @@
     "index.html": "/GeneralApplication/index.html",
     "static/css/2.247aca17.chunk.css.map": "/GeneralApplication/static/css/2.247aca17.chunk.css.map",
     "static/css/main.36c57e2e.chunk.css.map": "/GeneralApplication/static/css/main.36c57e2e.chunk.css.map",
-    "static/js/2.bde19dbd.chunk.js.LICENSE.txt": "/GeneralApplication/static/js/2.bde19dbd.chunk.js.LICENSE.txt",
+    "static/js/2.6c9dbd83.chunk.js.LICENSE.txt": "/GeneralApplication/static/js/2.6c9dbd83.chunk.js.LICENSE.txt",
     "static/js/3.2dd29a9a.chunk.js.LICENSE.txt": "/GeneralApplication/static/js/3.2dd29a9a.chunk.js.LICENSE.txt",
     "static/js/4.b96502c4.chunk.js.LICENSE.txt": "/GeneralApplication/static/js/4.b96502c4.chunk.js.LICENSE.txt",
     "static/js/5.3f3fff1c.chunk.js.LICENSE.txt": "/GeneralApplication/static/js/5.3f3fff1c.chunk.js.LICENSE.txt",
@@ -35,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.1cb155b3.js",
     "static/css/2.247aca17.chunk.css",
-    "static/js/2.bde19dbd.chunk.js",
+    "static/js/2.6c9dbd83.chunk.js",
     "static/css/main.36c57e2e.chunk.css",
-    "static/js/main.334026eb.chunk.js"
+    "static/js/main.801f6eff.chunk.js"
   ]
 }
